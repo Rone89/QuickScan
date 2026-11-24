@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Crisp minimalist geometric QR code core centered inside the concentric glass lens -->
+  <g fill="#FFFFFF">
+    <!-- Top-Left Finder Pattern -->
+    <path fill-rule="evenodd" d="
+      M 360 318 H 442 A 44 44 0 0 1 486 362 V 444 A 44 44 0 0 1 442 488 H 360 A 44 44 0 0 1 316 444 V 362 A 44 44 0 0 1 360 318 Z
+      M 374 356 A 20 20 0 0 0 354 376 V 430 A 20 20 0 0 0 374 450 H 428 A 20 20 0 0 0 448 430 V 376 A 20 20 0 0 0 428 356 Z
+    "/>
+    <rect x="379" y="381" width="44" height="44" rx="14" ry="14"/>
+
+    <!-- Top-Right Finder Pattern -->
+    <path fill-rule="evenodd" d="
+      M 582 318 H 664 A 44 44 0 0 1 708 362 V 444 A 44 44 0 0 1 664 488 H 582 A 44 44 0 0 1 538 444 V 362 A 44 44 0 0 1 582 318 Z
+      M 596 356 A 20 20 0 0 0 576 376 V 430 A 20 20 0 0 0 596 450 H 650 A 20 20 0 0 0 670 430 V 376 A 20 20 0 0 0 650 356 Z
+    "/>
+    <rect x="601" y="381" width="44" height="44" rx="14" ry="14"/>
+
+    <!-- Bottom-Left Finder Pattern -->
+    <path fill-rule="evenodd" d="
+      M 360 536 H 442 A 44 44 0 0 1 486 580 V 662 A 44 44 0 0 1 442 706 H 360 A 44 44 0 0 1 316 662 V 580 A 44 44 0 0 1 360 536 Z
+      M 374 574 A 20 20 0 0 0 354 594 V 648 A 20 20 0 0 0 374 668 H 428 A 20 20 0 0 0 448 648 V 594 A 20 20 0 0 0 428 574 Z
+    "/>
+    <rect x="379" y="599" width="44" height="44" rx="14" ry="14"/>
+
+    <!-- Bottom-Right Sculptural Data Modules -->
+    <rect x="538" y="536" width="66" height="66" rx="22" ry="22"/>
+    <rect x="642" y="536" width="66" height="66" rx="22" ry="22"/>
+    <rect x="538" y="640" width="66" height="66" rx="22" ry="22"/>
+    <rect x="630" y="628" width="78" height="78" rx="25" ry="25"/>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+name: QuickScan
+options:
+  bundleIdPrefix: com.rayc
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    TARGETED_DEVICE_FAMILY: "1"
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+  configs:
+    Release:
+      SWIFT_OPTIMIZATION_LEVEL: -O
+      SWIFT_COMPILATION_MODE: wholemodule
+      ENABLE_DEBUG_DYLIB: NO
+
+targets:
+  QuickScan:
+    type: application
+    platform: iOS
+    sources:
+      - path: QuickScanApp
+        excludes:
+          - Resources/AppIcon.icon
+      - path: QuickScanApp/Resources/AppIcon.icon
+        type: file
+        buildPhase: resources
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rayc.quickscan
+        PRODUCT_NAME: QuickScan
+        INFOPLIST_FILE: QuickScanApp/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        COREML_CODEGEN_LANGUAGE: None
+        SWIFT_EMIT_LOC_STRINGS: YES
+    dependencies:
+      - target: QuickScanWidget
+        embed: true
+        codeSign: true
+
+  QuickScanWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: QuickScanWidget
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rayc.quickscan.widget
+        PRODUCT_NAME: QuickScanWidget
+        INFOPLIST_FILE: QuickScanWidget/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) WIDGET_EXTENSION"
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/Frameworks"
+          - "@executable_path/../../Frameworks"
+        SWIFT_EMIT_LOC_STRINGS: YES
+
+  QuickScanTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: QuickScanTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rayc.quickscan.tests
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: QuickScan
+
+schemes:
+  QuickScan:
+    build:
+      targets:
+        QuickScan: all
+        QuickScanWidget: all
+        QuickScanTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - QuickScanTests

@@ -1,0 +1,104 @@
+{
+  "fill-specializations" : [
+    {
+      "value" : {
+        "linear-gradient" : [
+          "display-p3:0.06000,0.44000,0.98000,1.00000",
+          "display-p3:0.02000,0.69000,0.56000,1.00000"
+        ],
+        "orientation" : {
+          "start" : {
+            "x" : 0.12,
+            "y" : 0.0
+          },
+          "stop" : {
+            "x" : 0.88,
+            "y" : 1.0
+          }
+        }
+      }
+    },
+    {
+      "appearance" : "dark",
+      "value" : {
+        "linear-gradient" : [
+          "display-p3:0.04000,0.11500,0.25000,1.00000",
+          "display-p3:0.02000,0.17500,0.18000,1.00000"
+        ],
+        "orientation" : {
+          "start" : {
+            "x" : 0.12,
+            "y" : 0.0
+          },
+          "stop" : {
+            "x" : 0.88,
+            "y" : 1.0
+          }
+        }
+      }
+    }
+  ],
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "glass" : true,
+          "image-name" : "viewfinder_frame.svg",
+          "name" : "Viewfinder"
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.42
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.24
+      }
+    },
+    {
+      "layers" : [
+        {
+          "glass" : true,
+          "image-name" : "qr_matrix.svg",
+          "name" : "QRMatrix"
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.34
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.34
+      }
+    },
+    {
+      "blur-material" : 0.5,
+      "layers" : [
+        {
+          "glass" : true,
+          "image-name" : "lens_backdrop.svg",
+          "name" : "LensBackdrop"
+        }
+      ],
+      "opacity" : 0.36,
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.18
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.65
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : [
+      "iOS"
+    ]
+  }
+}

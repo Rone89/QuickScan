@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Four sculptural concentric rounded L-shaped viewfinder corners floating above the glass lens -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="54" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top-Left (radius 112 concentrates smoothly around the 106-radius glass plate) -->
+    <path d="M 192 362 V 304 A 112 112 0 0 1 304 192 H 362"/>
+    <!-- Top-Right -->
+    <path d="M 662 192 H 720 A 112 112 0 0 1 832 304 V 362"/>
+    <!-- Bottom-Right -->
+    <path d="M 832 662 V 720 A 112 112 0 0 1 720 832 H 662"/>
+    <!-- Bottom-Left -->
+    <path d="M 362 832 H 304 A 112 112 0 0 1 192 720 V 662"/>
+  </g>
+</svg>

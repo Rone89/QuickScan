@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CC8B2FF9DB4D075B4DC08BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAB5108D2F3BFF03BC57D77 /* Assets.xcassets */; };
+		1F3696399B08C70978BCFEE6 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3391EE5D1D2AD3793BD8F2 /* CameraPreviewView.swift */; };
+		244134C4C9E42F6AEFBD5F00 /* QRAutoZoomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB92484DAC9D97C53496A6A7 /* QRAutoZoomTests.swift */; };
+		3FCCF6991CDE79D8310E558B /* QuickScanShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD91C6941AD205C1DBCCB9 /* QuickScanShortcuts.swift */; };
+		460599999C8028559F72CC50 /* CameraZoomDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F4634DDB7F30F926AD805C /* CameraZoomDialView.swift */; };
+		57D9478E890A2CB1586ECA60 /* QRCodeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AD4BD4CF895FA2EB4180DC /* QRCodeRoute.swift */; };
+		58C3558D315532128070C7F8 /* QuickScanWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649893AE332439902A9D0122 /* QuickScanWidgetViews.swift */; };
+		6CA9D4326D11C5E1407BE417 /* AppURLOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BF7C4373802BD98C20CC5A /* AppURLOpener.swift */; };
+		728F0074E10E18FCABAE032C /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BE7773AD5D8599DB090793 /* DeepLink.swift */; };
+		84FA246B37E3C107B8459BD3 /* ScanHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953672BF00388794F574AAB /* ScanHistoryView.swift */; };
+		8911FEF571A4D48727636B37 /* QuickScanActionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBD34B41E8262672E83859A /* QuickScanActionCenter.swift */; };
+		8CFF6D44FC6935DFF3703944 /* QuickScanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F87B4417C531E3D9A0B068 /* QuickScanApp.swift */; };
+		94B6F8A23340E9CD8B8ADBDB /* QuickScanWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C142CBEECEAB2A58E42AA33 /* QuickScanWidget.swift */; };
+		99ECF1B8C8FE56C9301ED626 /* QuickScanWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F15BBC053EBEFD4E27812E8A /* QuickScanWidget.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9B497BBFB96E0E5CCC9E2EEE /* ScanResultSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EBA74839760C221BBC1AD8 /* ScanResultSheetView.swift */; };
+		B6F8C719221B15E3CCF422B0 /* CameraScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0DE1F5693FD0A918AF130 /* CameraScannerController.swift */; };
+		CD01A1C96F1546C9F79E5691 /* WeChatQRDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5C70AD422FA2C02049716 /* WeChatQRDetector.swift */; };
+		D3EC34FF5DEEA03A4017C814 /* QRCodeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E094E12ECF13DAC9F9336D /* QRCodeRouterTests.swift */; };
+		D5828DD99B0FE4DC810044D2 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BE7773AD5D8599DB090793 /* DeepLink.swift */; };
+		D9C04CF38C524E8626271D70 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 80C80FF12AD29D7E63ECCA78 /* AppIcon.icon */; };
+		E4A2F0B2EC6D28FDB5D689C3 /* QuickScanWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F132DCF4557CB67AAE75C36 /* QuickScanWidgetBundle.swift */; };
+		E71446D302542EAF611D48CE /* WeChatQRDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FD5BB707AB637BC2F395D105 /* WeChatQRDetector.mlmodel */; };
+		ED466D59BEE6E41626D28841 /* ScannerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753E660736F1F1D4C56A51A /* ScannerHomeView.swift */; };
+		F060AF7F8084F999F4A545B5 /* QRAutoZoomPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE362AD234F644E5C86D538 /* QRAutoZoomPolicy.swift */; };
+		F7A05ED9C376E39CECAF79BD /* ScanHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569484EF06F8CF59D19F7BEA /* ScanHistoryItem.swift */; };
+		FD97D09375870ED93B751264 /* QuickScanShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBD91C6941AD205C1DBCCB9 /* QuickScanShortcuts.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0399ED0C8C7A708DF5F3E8DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9C0DBF4F8BC24238DFA739D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02ACB43BF84AD1DED3144981;
+			remoteInfo = QuickScan;
+		};
+		ACA306D4C31BFFAED92BD868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9C0DBF4F8BC24238DFA739D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C06F0DD4059DEEC55F5798;
+			remoteInfo = QuickScanWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEEE7F8F894ACE17AB0F9CA4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99ECF1B8C8FE56C9301ED626 /* QuickScanWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0902C0F4B7453FCDFDB1A0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0953672BF00388794F574AAB /* ScanHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHistoryView.swift; sourceTree = "<group>"; };
+		0D3391EE5D1D2AD3793BD8F2 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		20BF7C4373802BD98C20CC5A /* AppURLOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppURLOpener.swift; sourceTree = "<group>"; };
+		29EBA74839760C221BBC1AD8 /* ScanResultSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultSheetView.swift; sourceTree = "<group>"; };
+		2BBD34B41E8262672E83859A /* QuickScanActionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickScanActionCenter.swift; sourceTree = "<group>"; };
+		36AD4BD4CF895FA2EB4180DC /* QRCodeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeRoute.swift; sourceTree = "<group>"; };
+		37BE7773AD5D8599DB090793 /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
+		3CBD91C6941AD205C1DBCCB9 /* QuickScanShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickScanShortcuts.swift; sourceTree = "<group>"; };
+		3F132DCF4557CB67AAE75C36 /* QuickScanWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickScanWidgetBundle.swift; sourceTree = "<group>"; };
+		4753E660736F1F1D4C56A51A /* ScannerHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerHomeView.swift; sourceTree = "<group>"; };
+		47F87B4417C531E3D9A0B068 /* QuickScanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickScanApp.swift; sourceTree = "<group>"; };
+		4C142CBEECEAB2A58E42AA33 /* QuickScanWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickScanWidget.swift; sourceTree = "<group>"; };
+		569484EF06F8CF59D19F7BEA /* ScanHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHistoryItem.swift; sourceTree = "<group>"; };
+		649893AE332439902A9D0122 /* QuickScanWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickScanWidgetViews.swift; sourceTree = "<group>"; };
+		79399A972288E3909703623F /* QuickScan.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = QuickScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C80FF12AD29D7E63ECCA78 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		AB92484DAC9D97C53496A6A7 /* QRAutoZoomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRAutoZoomTests.swift; sourceTree = "<group>"; };
+		ACD435CE074CBC4B721A559F /* QuickScanTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = QuickScanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F4634DDB7F30F926AD805C /* CameraZoomDialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraZoomDialView.swift; sourceTree = "<group>"; };
+		C19C6CDD7DB92F1BB494D8A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CAA5C70AD422FA2C02049716 /* WeChatQRDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatQRDetector.swift; sourceTree = "<group>"; };
+		CAF0DE1F5693FD0A918AF130 /* CameraScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerController.swift; sourceTree = "<group>"; };
+		D0E094E12ECF13DAC9F9336D /* QRCodeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeRouterTests.swift; sourceTree = "<group>"; };
+		DDAB5108D2F3BFF03BC57D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBE362AD234F644E5C86D538 /* QRAutoZoomPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRAutoZoomPolicy.swift; sourceTree = "<group>"; };
+		F15BBC053EBEFD4E27812E8A /* QuickScanWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = QuickScanWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5BB707AB637BC2F395D105 /* WeChatQRDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WeChatQRDetector.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		035425F047781A7D75832A09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBE362AD234F644E5C86D538 /* QRAutoZoomPolicy.swift */,
+				36AD4BD4CF895FA2EB4180DC /* QRCodeRoute.swift */,
+				569484EF06F8CF59D19F7BEA /* ScanHistoryItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E1698F94FEE281D9E29CFC0 /* QuickScanApp */ = {
+			isa = PBXGroup;
+			children = (
+				0902C0F4B7453FCDFDB1A0C8 /* Info.plist */,
+				47F87B4417C531E3D9A0B068 /* QuickScanApp.swift */,
+				035425F047781A7D75832A09 /* Models */,
+				D42792815C504FCE73F52F21 /* Resources */,
+				BDBAF07EFE2E188935172421 /* Services */,
+				6CD79654C4300CB6E4E0A055 /* Views */,
+			);
+			path = QuickScanApp;
+			sourceTree = "<group>";
+		};
+		4CF6FD1B8D1647540F025893 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				37BE7773AD5D8599DB090793 /* DeepLink.swift */,
+				3CBD91C6941AD205C1DBCCB9 /* QuickScanShortcuts.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6CD79654C4300CB6E4E0A055 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D3391EE5D1D2AD3793BD8F2 /* CameraPreviewView.swift */,
+				B2F4634DDB7F30F926AD805C /* CameraZoomDialView.swift */,
+				0953672BF00388794F574AAB /* ScanHistoryView.swift */,
+				4753E660736F1F1D4C56A51A /* ScannerHomeView.swift */,
+				29EBA74839760C221BBC1AD8 /* ScanResultSheetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7132B33D9AFBE9ED3556A2B9 /* QuickScanTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB92484DAC9D97C53496A6A7 /* QRAutoZoomTests.swift */,
+				D0E094E12ECF13DAC9F9336D /* QRCodeRouterTests.swift */,
+			);
+			path = QuickScanTests;
+			sourceTree = "<group>";
+		};
+		7668B0317DF17C4CBD1F5DF8 /* QuickScanWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C19C6CDD7DB92F1BB494D8A2 /* Info.plist */,
+				4C142CBEECEAB2A58E42AA33 /* QuickScanWidget.swift */,
+				3F132DCF4557CB67AAE75C36 /* QuickScanWidgetBundle.swift */,
+				649893AE332439902A9D0122 /* QuickScanWidgetViews.swift */,
+			);
+			path = QuickScanWidget;
+			sourceTree = "<group>";
+		};
+		869F22BC3E1903F7F1B87EDD = {
+			isa = PBXGroup;
+			children = (
+				3E1698F94FEE281D9E29CFC0 /* QuickScanApp */,
+				7132B33D9AFBE9ED3556A2B9 /* QuickScanTests */,
+				7668B0317DF17C4CBD1F5DF8 /* QuickScanWidget */,
+				4CF6FD1B8D1647540F025893 /* Shared */,
+				A5957AA96D94A0D50A87A5D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5957AA96D94A0D50A87A5D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79399A972288E3909703623F /* QuickScan.app */,
+				ACD435CE074CBC4B721A559F /* QuickScanTests.xctest */,
+				F15BBC053EBEFD4E27812E8A /* QuickScanWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDBAF07EFE2E188935172421 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				20BF7C4373802BD98C20CC5A /* AppURLOpener.swift */,
+				CAF0DE1F5693FD0A918AF130 /* CameraScannerController.swift */,
+				2BBD34B41E8262672E83859A /* QuickScanActionCenter.swift */,
+				CAA5C70AD422FA2C02049716 /* WeChatQRDetector.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D42792815C504FCE73F52F21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80C80FF12AD29D7E63ECCA78 /* AppIcon.icon */,
+				DDAB5108D2F3BFF03BC57D77 /* Assets.xcassets */,
+				FD5BB707AB637BC2F395D105 /* WeChatQRDetector.mlmodel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02ACB43BF84AD1DED3144981 /* QuickScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADED142D393B9ADAA9F15549 /* Build configuration list for PBXNativeTarget "QuickScan" */;
+			buildPhases = (
+				751041A2675D5850868CFBEF /* Sources */,
+				EB554558337F08225C035CE1 /* Resources */,
+				BEEE7F8F894ACE17AB0F9CA4 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB17EEA9CC31DD947F9A47DD /* PBXTargetDependency */,
+			);
+			name = QuickScan;
+			packageProductDependencies = (
+			);
+			productName = QuickScan;
+			productReference = 79399A972288E3909703623F /* QuickScan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79C06F0DD4059DEEC55F5798 /* QuickScanWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8734A6508288CD581093718 /* Build configuration list for PBXNativeTarget "QuickScanWidget" */;
+			buildPhases = (
+				F942866EE60081C61344273E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickScanWidget;
+			packageProductDependencies = (
+			);
+			productName = QuickScanWidget;
+			productReference = F15BBC053EBEFD4E27812E8A /* QuickScanWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F2AD92940E2F588E7ACF92E8 /* QuickScanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E035A61E24E46035E105C2B /* Build configuration list for PBXNativeTarget "QuickScanTests" */;
+			buildPhases = (
+				2F85EED08226F579943AF68C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6375F822DA3E6910707A76AE /* PBXTargetDependency */,
+			);
+			name = QuickScanTests;
+			packageProductDependencies = (
+			);
+			productName = QuickScanTests;
+			productReference = ACD435CE074CBC4B721A559F /* QuickScanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9C0DBF4F8BC24238DFA739D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					02ACB43BF84AD1DED3144981 = {
+						ProvisioningStyle = Automatic;
+					};
+					79C06F0DD4059DEEC55F5798 = {
+						ProvisioningStyle = Automatic;
+					};
+					F2AD92940E2F588E7ACF92E8 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3601D4063BC864AF614CE87A /* Build configuration list for PBXProject "QuickScan" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 869F22BC3E1903F7F1B87EDD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A5957AA96D94A0D50A87A5D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02ACB43BF84AD1DED3144981 /* QuickScan */,
+				79C06F0DD4059DEEC55F5798 /* QuickScanWidget */,
+				F2AD92940E2F588E7ACF92E8 /* QuickScanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB554558337F08225C035CE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C04CF38C524E8626271D70 /* AppIcon.icon in Resources */,
+				0CC8B2FF9DB4D075B4DC08BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F85EED08226F579943AF68C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244134C4C9E42F6AEFBD5F00 /* QRAutoZoomTests.swift in Sources */,
+				D3EC34FF5DEEA03A4017C814 /* QRCodeRouterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		751041A2675D5850868CFBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA9D4326D11C5E1407BE417 /* AppURLOpener.swift in Sources */,
+				1F3696399B08C70978BCFEE6 /* CameraPreviewView.swift in Sources */,
+				B6F8C719221B15E3CCF422B0 /* CameraScannerController.swift in Sources */,
+				460599999C8028559F72CC50 /* CameraZoomDialView.swift in Sources */,
+				D5828DD99B0FE4DC810044D2 /* DeepLink.swift in Sources */,
+				F060AF7F8084F999F4A545B5 /* QRAutoZoomPolicy.swift in Sources */,
+				57D9478E890A2CB1586ECA60 /* QRCodeRoute.swift in Sources */,
+				8911FEF571A4D48727636B37 /* QuickScanActionCenter.swift in Sources */,
+				8CFF6D44FC6935DFF3703944 /* QuickScanApp.swift in Sources */,
+				FD97D09375870ED93B751264 /* QuickScanShortcuts.swift in Sources */,
+				F7A05ED9C376E39CECAF79BD /* ScanHistoryItem.swift in Sources */,
+				84FA246B37E3C107B8459BD3 /* ScanHistoryView.swift in Sources */,
+				9B497BBFB96E0E5CCC9E2EEE /* ScanResultSheetView.swift in Sources */,
+				ED466D59BEE6E41626D28841 /* ScannerHomeView.swift in Sources */,
+				E71446D302542EAF611D48CE /* WeChatQRDetector.mlmodel in Sources */,
+				CD01A1C96F1546C9F79E5691 /* WeChatQRDetector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F942866EE60081C61344273E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728F0074E10E18FCABAE032C /* DeepLink.swift in Sources */,
+				3FCCF6991CDE79D8310E558B /* QuickScanShortcuts.swift in Sources */,
+				94B6F8A23340E9CD8B8ADBDB /* QuickScanWidget.swift in Sources */,
+				E4A2F0B2EC6D28FDB5D689C3 /* QuickScanWidgetBundle.swift in Sources */,
+				58C3558D315532128070C7F8 /* QuickScanWidgetViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6375F822DA3E6910707A76AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02ACB43BF84AD1DED3144981 /* QuickScan */;
+			targetProxy = 0399ED0C8C7A708DF5F3E8DF /* PBXContainerItemProxy */;
+		};
+		CB17EEA9CC31DD947F9A47DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79C06F0DD4059DEEC55F5798 /* QuickScanWidget */;
+			targetProxy = ACA306D4C31BFFAED92BD868 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05A234423FB441864A8B98AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QuickScanWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayc.quickscan.widget;
+				PRODUCT_NAME = QuickScanWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WIDGET_EXTENSION";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52D5CB0DB1B65D6D041159C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayc.quickscan.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickScan.app/QuickScan";
+			};
+			name = Release;
+		};
+		6CCF86C0BFCC26E5E98AA564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayc.quickscan.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickScan.app/QuickScan";
+			};
+			name = Debug;
+		};
+		79007C6940CF2BB1A6F2E983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8A0B307B2527176F61BDB1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QuickScanWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayc.quickscan.widget;
+				PRODUCT_NAME = QuickScanWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WIDGET_EXTENSION";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FD9686B85CCDAA39E2B97A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COREML_CODEGEN_LANGUAGE = None;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QuickScanApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayc.quickscan;
+				PRODUCT_NAME = QuickScan;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DACEE3DA7ED2627C2A27B996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E270ADAEC21351EA0C9A6800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COREML_CODEGEN_LANGUAGE = None;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QuickScanApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayc.quickscan;
+				PRODUCT_NAME = QuickScan;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3601D4063BC864AF614CE87A /* Build configuration list for PBXProject "QuickScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79007C6940CF2BB1A6F2E983 /* Debug */,
+				DACEE3DA7ED2627C2A27B996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4E035A61E24E46035E105C2B /* Build configuration list for PBXNativeTarget "QuickScanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CCF86C0BFCC26E5E98AA564 /* Debug */,
+				52D5CB0DB1B65D6D041159C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ADED142D393B9ADAA9F15549 /* Build configuration list for PBXNativeTarget "QuickScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD9686B85CCDAA39E2B97A9 /* Debug */,
+				E270ADAEC21351EA0C9A6800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F8734A6508288CD581093718 /* Build configuration list for PBXNativeTarget "QuickScanWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0B307B2527176F61BDB1E4 /* Debug */,
+				05A234423FB441864A8B98AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9C0DBF4F8BC24238DFA739D /* Project object */;
+}
